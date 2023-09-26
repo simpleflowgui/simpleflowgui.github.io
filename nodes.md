@@ -2,7 +2,7 @@
 
 ## Basic Library
 
-<a href="alternative text"><img src="https://raw.githubusercontent.com/simpleflowgui/simpleflowgui.github.io/main/imgs/basiclib.png" align="middle" width="200" height="100"></a>
+<a href="alternative text"><img src="https://github.com/simpleflowgui/simpleflowgui.github.io/blob/main/imgs/basiclib.png?raw=true" align="middle" width="200" height="100"></a>
 
 
 ### Start Node: 
