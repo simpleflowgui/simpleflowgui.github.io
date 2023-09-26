@@ -2,7 +2,12 @@
 
 ## Basic Library
 
+<a href="alternative text"><img src="https://github.com/simpleflowgui/simpleflowgui.github.io/blob/main/imgs/basiclib.png" align="middle" width="200" height="100"></a>
+
+
 ### Start Node: 
+
+<a href="alternative text"><img src="https://github.com/simpleflowgui/simpleflowgui.github.io/blob/main/imgs/startn.png" align="middle" width="200" height="100"></a>
 
 Description:
 
@@ -11,12 +16,16 @@ Used to mark the start of a flow. It should be noted that only one start node sh
 
 ### End Node: 
 
+<a href="alternative text"><img src="https://github.com/simpleflowgui/simpleflowgui.github.io/blob/main/imgs/endn.png" align="middle" width="200" height="100"></a>
+
 Description:
 
 Used to mark the end of a flow. It should be noted that only one start node should be in a certain flow.
 
 
 ### Output Image Node: 
+
+<a href="alternative text"><img src="https://github.com/simpleflowgui/simpleflowgui.github.io/blob/main/imgs/outputimagen.png" align="middle" width="200" height="100"></a>
 
 Description:
 
@@ -25,11 +34,15 @@ Used to display an image when the previous node that its connected to has an out
 
 ### Loop Node: 
 
+<a href="alternative text"><img src="https://github.com/simpleflowgui/simpleflowgui.github.io/blob/main/imgs/loopn.png" align="middle" width="200" height="100"></a>
+
 Description:
 
 Used to re-execute the part of the flow (nodes) that lies after it indefinetly. To stop the loop, the stop button on the main GUI should be clicked on.
 
 ### Camera Video Input Node: 
+
+<a href="alternative text"><img src="https://github.com/simpleflowgui/simpleflowgui.github.io/blob/main/imgs/cameravideoinputn.png" align="middle" width="200" height="100"></a>
 
 Description:
 
@@ -41,6 +54,8 @@ Camera index: To specify the index of a connected camera to the computer.
 
 
 ### Select Camera Node:
+
+<a href="alternative text"><img src="https://github.com/simpleflowgui/simpleflowgui.github.io/blob/main/imgs/cameraselectn.png" align="middle" width="200" height="100"></a>
 
 Description:
 
@@ -58,6 +73,8 @@ Camera index: To specify the index of a connected camera to the computer.
 
 ### Input Model Node: 
 
+<a href="alternative text"><img src="https://github.com/simpleflowgui/simpleflowgui.github.io/blob/main/imgs/inputmodeln.png" align="middle" width="200" height="100"></a>
+
 Description:
 
 Used to select a model file to be used for prediction.
@@ -68,6 +85,8 @@ Model path: To specify the path for the model file by selecting it in the file e
 
 
 ### Torch Classify Node:
+
+<a href="alternative text"><img src="https://github.com/simpleflowgui/simpleflowgui.github.io/blob/main/imgs/torchclassifyn.png" align="middle" width="200" height="200"></a>
 
 Description:
 
@@ -82,6 +101,8 @@ Device: To specify either to use the cpu or cuda for predictions. Select cuda fo
 
 
 ### Select Model Node:
+
+<a href="alternative text"><img src="https://github.com/simpleflowgui/simpleflowgui.github.io/blob/main/imgs/selectmodeln.png" align="middle" width="200" height="300"></a>
 
 Description:
 
@@ -99,6 +120,8 @@ Builder: To select a specific builder for the pretrained model selected.
 
 ### Train Torch Classify Node:
 
+<a href="alternative text"><img src="https://github.com/simpleflowgui/simpleflowgui.github.io/blob/main/imgs/traintorchclassifyn.png" align="middle" width="200" height="300"></a>
+
 Description:
 
 Used to train models for classification task by using transfer learning using pretrained torch models.
@@ -115,6 +138,8 @@ Device: To specify either to use the cpu or cuda for training. Select cuda for N
 
 ### Torch Detect Node:
 
+<a href="alternative text"><img src="https://github.com/simpleflowgui/simpleflowgui.github.io/blob/main/imgs/torchdetectn.png" align="middle" width="200" height="200"></a>
+
 Description:
 
 Used for prediction using Torch object detection models. Detects objects in images.
@@ -128,6 +153,8 @@ Device: To specify either to use the cpu or cuda for predictions. Select cuda fo
 
 
 ### Train Torch Detect Node:
+
+<a href="alternative text"><img src="https://github.com/simpleflowgui/simpleflowgui.github.io/blob/main/imgs/traintorchdetectn.png" align="middle" width="200" height="300"></a>
 
 Description:
 
@@ -144,6 +171,8 @@ Device: To specify either to use the cpu or cuda for training. Select cuda for N
 
 
 ### Train YOLO Node:
+
+<a href="alternative text"><img src="https://github.com/simpleflowgui/simpleflowgui.github.io/blob/main/imgs/trainyolon.png" align="middle" width="400" height="700"></a>
 
 Description:
 
@@ -169,6 +198,7 @@ Device: To specify either to use the cpu or cuda for training. Select cuda for N
 
 ### Predict YOLO Node:
 
+<a href="alternative text"><img src="https://github.com/simpleflowgui/simpleflowgui.github.io/blob/main/imgs/predictyolon.png" align="middle" width="250" height="400"></a>
 
 Description: 
 
@@ -180,7 +210,6 @@ Model: To select whether to use a pretrained or custom model.
 
 Mode: To select the desired computer vision task.
 
-
 Select Model: To select the pretrained model in case of predictions using a pretrained model.  
 
 Image path: To specify the path for the image file to be predicted on by selecting it in the file explorer window. Dont select anything to use a photo taken by a camera.
@@ -188,6 +217,8 @@ Image path: To specify the path for the image file to be predicted on by selecti
 
 
 ### Segment Anything Node:
+
+<a href="alternative text"><img src="https://github.com/simpleflowgui/simpleflowgui.github.io/blob/main/imgs/segmentanythingn.png" align="middle" width="200" height="100"></a>
 
 Description:
 
@@ -205,12 +236,13 @@ Image path: To specify the path for the image file to be predicted on by selecti
 
 ### MQTT Publish Node:
 
+<a href="alternative text"><img src="https://github.com/simpleflowgui/simpleflowgui.github.io/blob/main/imgs/mqttpublishn.png" align="middle" width="300" height="700"></a>
+
 Description: 
 
 Used to publish (send) messages on a topic to an MQTT broker.
 
 Parameters:
-
 
 Client ID: To specify a client ID. A random ID will be assigned if left empty.
 
@@ -229,6 +261,8 @@ Topic: To specify the topic to publish on.
 
 
 ### MQTT  Subscribe Node:
+
+<a href="alternative text"><img src="https://github.com/simpleflowgui/simpleflowgui.github.io/blob/main/imgs/mqttsubscriben.png" align="middle" width="300" height="600"></a>
 
 Description:
 
@@ -256,6 +290,8 @@ Topic: To specify the topic to subscribe to.
 
 ### ClassificationPrepareYOLO Node:
 
+<a href="alternative text"><img src="https://github.com/simpleflowgui/simpleflowgui.github.io/blob/main/imgs/classificationprepareyolon.png" align="middle" width="300" height="500"></a>
+
 Description:
 
 Used to prepare datasets to use for training classification models by using pretrained YOLOV8 classification models. The node will structure the dataset folder to be used with the Train YOLO 
@@ -277,6 +313,8 @@ Test images percentage: To specify the percentage of the test images from the to
 
 ### ClassificationPrepareTorch Node:
 
+<a href="alternative text"><img src="https://github.com/simpleflowgui/simpleflowgui.github.io/blob/main/imgs/classificationpreparetorchn.png" align="middle" width="300" height="500"></a>
+
 Description:
 
 Used to prepare datasets to use for training classification models by using pretrained Torch classification models. The node will structure the dataset folder to be used with the Train Torch 
@@ -297,6 +335,8 @@ Test images percentage: To specify the percentage of the test images from the to
 
 
 ### YOLO From Label Studio Node:
+
+<a href="alternative text"><img src="https://github.com/simpleflowgui/simpleflowgui.github.io/blob/main/imgs/yolofromlabelstudion.png" align="middle" width="200" height="300"></a>
 
 Description:
 
