@@ -34,7 +34,7 @@ Used to display an image when the previous node that its connected to has an out
 
 ### Loop Node: 
 
-<a href="alternative text"><img src="https://github.com/simpleflowgui/simpleflowgui.github.io/blob/main/imgs/loopn.png?raw=true"" align="middle" width="200" height="100"></a>
+<a href="alternative text"><img src="https://github.com/simpleflowgui/simpleflowgui.github.io/blob/main/imgs/loopn.png?raw=true" align="middle" width="200" height="100"></a>
 
 Description:
 
@@ -71,9 +71,11 @@ Camera index: To specify the index of a connected camera to the computer.
 
 ## Computer Vision Library
 
+<a href="alternative text"><img src="https://github.com/simpleflowgui/simpleflowgui.github.io/blob/main/imgs/computervisionlib.png?raw=true" align="middle" width="200" height="100"></a>
+
 ### Input Model Node: 
 
-<a href="alternative text"><img src="https://github.com/simpleflowgui/simpleflowgui.github.io/blob/main/imgs/inputmodeln.png" align="middle" width="200" height="100"></a>
+<a href="alternative text"><img src="https://github.com/simpleflowgui/simpleflowgui.github.io/blob/main/imgs/inputmodeln.png?raw=true" align="middle" width="200" height="100"></a>
 
 Description:
 
@@ -86,7 +88,7 @@ Model path: To specify the path for the model file by selecting it in the file e
 
 ### Torch Classify Node:
 
-<a href="alternative text"><img src="https://github.com/simpleflowgui/simpleflowgui.github.io/blob/main/imgs/torchclassifyn.png" align="middle" width="200" height="200"></a>
+<a href="alternative text"><img src="https://github.com/simpleflowgui/simpleflowgui.github.io/blob/main/imgs/torchclassifyn.png?raw=true" align="middle" width="200" height="200"></a>
 
 Description:
 
@@ -102,7 +104,7 @@ Device: To specify either to use the cpu or cuda for predictions. Select cuda fo
 
 ### Select Model Node:
 
-<a href="alternative text"><img src="https://github.com/simpleflowgui/simpleflowgui.github.io/blob/main/imgs/selectmodeln.png" align="middle" width="200" height="300"></a>
+<a href="alternative text"><img src="https://github.com/simpleflowgui/simpleflowgui.github.io/blob/main/imgs/selectmodeln.png?raw=true" align="middle" width="200" height="300"></a>
 
 Description:
 
@@ -120,7 +122,7 @@ Builder: To select a specific builder for the pretrained model selected.
 
 ### Train Torch Classify Node:
 
-<a href="alternative text"><img src="https://github.com/simpleflowgui/simpleflowgui.github.io/blob/main/imgs/traintorchclassifyn.png" align="middle" width="200" height="300"></a>
+<a href="alternative text"><img src="https://github.com/simpleflowgui/simpleflowgui.github.io/blob/main/imgs/traintorchclassifyn.png?raw=true" align="middle" width="200" height="300"></a>
 
 Description:
 
@@ -138,7 +140,7 @@ Device: To specify either to use the cpu or cuda for training. Select cuda for N
 
 ### Torch Detect Node:
 
-<a href="alternative text"><img src="https://github.com/simpleflowgui/simpleflowgui.github.io/blob/main/imgs/torchdetectn.png" align="middle" width="200" height="200"></a>
+<a href="alternative text"><img src="https://github.com/simpleflowgui/simpleflowgui.github.io/blob/main/imgs/torchdetectn.png?raw=true" align="middle" width="200" height="200"></a>
 
 Description:
 
@@ -154,7 +156,7 @@ Device: To specify either to use the cpu or cuda for predictions. Select cuda fo
 
 ### Train Torch Detect Node:
 
-<a href="alternative text"><img src="https://github.com/simpleflowgui/simpleflowgui.github.io/blob/main/imgs/traintorchdetectn.png" align="middle" width="200" height="300"></a>
+<a href="alternative text"><img src="https://github.com/simpleflowgui/simpleflowgui.github.io/blob/main/imgs/traintorchdetectn.png?raw=true" align="middle" width="200" height="300"></a>
 
 Description:
 
@@ -172,7 +174,7 @@ Device: To specify either to use the cpu or cuda for training. Select cuda for N
 
 ### Train YOLO Node:
 
-<a href="alternative text"><img src="https://github.com/simpleflowgui/simpleflowgui.github.io/blob/main/imgs/trainyolon.png" align="middle" width="400" height="700"></a>
+<a href="alternative text"><img src="https://github.com/simpleflowgui/simpleflowgui.github.io/blob/main/imgs/trainyolon.png?raw=true" align="middle" width="400" height="700"></a>
 
 Description:
 
@@ -198,7 +200,7 @@ Device: To specify either to use the cpu or cuda for training. Select cuda for N
 
 ### Predict YOLO Node:
 
-<a href="alternative text"><img src="https://github.com/simpleflowgui/simpleflowgui.github.io/blob/main/imgs/predictyolon.png" align="middle" width="250" height="400"></a>
+<a href="alternative text"><img src="https://github.com/simpleflowgui/simpleflowgui.github.io/blob/main/imgs/predictyolon.png?raw=true" align="middle" width="250" height="400"></a>
 
 Description: 
 
@@ -218,7 +220,7 @@ Image path: To specify the path for the image file to be predicted on by selecti
 
 ### Segment Anything Node:
 
-<a href="alternative text"><img src="https://github.com/simpleflowgui/simpleflowgui.github.io/blob/main/imgs/segmentanythingn.png" align="middle" width="200" height="100"></a>
+<a href="alternative text"><img src="https://github.com/simpleflowgui/simpleflowgui.github.io/blob/main/imgs/segmentanythingn.png?raw=true" align="middle" width="200" height="100"></a>
 
 Description:
 
@@ -234,9 +236,11 @@ Image path: To specify the path for the image file to be predicted on by selecti
 
 ## Communication Library
 
+<a href="alternative text"><img src="https://github.com/simpleflowgui/simpleflowgui.github.io/blob/main/imgs/communicationlib.png?raw=true" align="middle" width="200" height="100"></a>
+
 ### MQTT Publish Node:
 
-<a href="alternative text"><img src="https://github.com/simpleflowgui/simpleflowgui.github.io/blob/main/imgs/mqttpublishn.png" align="middle" width="300" height="700"></a>
+<a href="alternative text"><img src="https://github.com/simpleflowgui/simpleflowgui.github.io/blob/main/imgs/mqttpublishn.png?raw=true" align="middle" width="300" height="700"></a>
 
 Description: 
 
@@ -262,7 +266,7 @@ Topic: To specify the topic to publish on.
 
 ### MQTT  Subscribe Node:
 
-<a href="alternative text"><img src="https://github.com/simpleflowgui/simpleflowgui.github.io/blob/main/imgs/mqttsubscriben.png" align="middle" width="300" height="600"></a>
+<a href="alternative text"><img src="https://github.com/simpleflowgui/simpleflowgui.github.io/blob/main/imgs/mqttsubscriben.png?raw=true" align="middle" width="300" height="600"></a>
 
 Description:
 
@@ -288,9 +292,11 @@ Topic: To specify the topic to subscribe to.
 
 ## Dataset Library
 
+<a href="alternative text"><img src="https://github.com/simpleflowgui/simpleflowgui.github.io/blob/main/imgs/datasetlib.png?raw=true" align="middle" width="200" height="100"></a>
+
 ### ClassificationPrepareYOLO Node:
 
-<a href="alternative text"><img src="https://github.com/simpleflowgui/simpleflowgui.github.io/blob/main/imgs/classificationprepareyolon.png" align="middle" width="300" height="500"></a>
+<a href="alternative text"><img src="https://github.com/simpleflowgui/simpleflowgui.github.io/blob/main/imgs/classificationprepareyolon.png?raw=true" align="middle" width="300" height="500"></a>
 
 Description:
 
@@ -313,7 +319,7 @@ Test images percentage: To specify the percentage of the test images from the to
 
 ### ClassificationPrepareTorch Node:
 
-<a href="alternative text"><img src="https://github.com/simpleflowgui/simpleflowgui.github.io/blob/main/imgs/classificationpreparetorchn.png" align="middle" width="300" height="500"></a>
+<a href="alternative text"><img src="https://github.com/simpleflowgui/simpleflowgui.github.io/blob/main/imgs/classificationpreparetorchn.png?raw=true" align="middle" width="300" height="500"></a>
 
 Description:
 
@@ -336,7 +342,7 @@ Test images percentage: To specify the percentage of the test images from the to
 
 ### YOLO From Label Studio Node:
 
-<a href="alternative text"><img src="https://github.com/simpleflowgui/simpleflowgui.github.io/blob/main/imgs/yolofromlabelstudion.png" align="middle" width="200" height="300"></a>
+<a href="alternative text"><img src="https://github.com/simpleflowgui/simpleflowgui.github.io/blob/main/imgs/yolofromlabelstudion.png?raw=true" align="middle" width="200" height="300"></a>
 
 Description:
 
