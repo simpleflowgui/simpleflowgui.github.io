@@ -7,7 +7,7 @@
 
 ### Start Node: 
 
-<a href="alternative text"><img src="https://github.com/simpleflowgui/simpleflowgui.github.io/blob/main/imgs/startn.png" align="middle" width="200" height="100"></a>
+<a href="alternative text"><img src="https://github.com/simpleflowgui/simpleflowgui.github.io/blob/main/imgs/startn.png?raw=true" align="middle" width="200" height="100"></a>
 
 Description:
 
@@ -16,7 +16,7 @@ Used to mark the start of a flow. It should be noted that only one start node sh
 
 ### End Node: 
 
-<a href="alternative text"><img src="https://github.com/simpleflowgui/simpleflowgui.github.io/blob/main/imgs/endn.png" align="middle" width="200" height="100"></a>
+<a href="alternative text"><img src="https://github.com/simpleflowgui/simpleflowgui.github.io/blob/main/imgs/endn.png?raw=true" align="middle" width="200" height="100"></a>
 
 Description:
 
@@ -25,7 +25,7 @@ Used to mark the end of a flow. It should be noted that only one start node shou
 
 ### Output Image Node: 
 
-<a href="alternative text"><img src="https://github.com/simpleflowgui/simpleflowgui.github.io/blob/main/imgs/outputimagen.png" align="middle" width="200" height="100"></a>
+<a href="alternative text"><img src="https://github.com/simpleflowgui/simpleflowgui.github.io/blob/main/imgs/outputimagen.png?raw=true" align="middle" width="200" height="100"></a>
 
 Description:
 
@@ -34,7 +34,7 @@ Used to display an image when the previous node that its connected to has an out
 
 ### Loop Node: 
 
-<a href="alternative text"><img src="https://github.com/simpleflowgui/simpleflowgui.github.io/blob/main/imgs/loopn.png" align="middle" width="200" height="100"></a>
+<a href="alternative text"><img src="https://github.com/simpleflowgui/simpleflowgui.github.io/blob/main/imgs/loopn.png?raw=true"" align="middle" width="200" height="100"></a>
 
 Description:
 
@@ -42,7 +42,7 @@ Used to re-execute the part of the flow (nodes) that lies after it indefinetly. 
 
 ### Camera Video Input Node: 
 
-<a href="alternative text"><img src="https://github.com/simpleflowgui/simpleflowgui.github.io/blob/main/imgs/cameravideoinputn.png" align="middle" width="200" height="100"></a>
+<a href="alternative text"><img src="https://github.com/simpleflowgui/simpleflowgui.github.io/blob/main/imgs/cameravideoinputn.png?raw=true" align="middle" width="200" height="100"></a>
 
 Description:
 
@@ -55,7 +55,7 @@ Camera index: To specify the index of a connected camera to the computer.
 
 ### Select Camera Node:
 
-<a href="alternative text"><img src="https://github.com/simpleflowgui/simpleflowgui.github.io/blob/main/imgs/cameraselectn.png" align="middle" width="200" height="100"></a>
+<a href="alternative text"><img src="https://github.com/simpleflowgui/simpleflowgui.github.io/blob/main/imgs/cameraselectn.png?raw=true" align="middle" width="200" height="100"></a>
 
 Description:
 
