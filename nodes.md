@@ -71,7 +71,7 @@ Camera index: To specify the index of a connected camera to the computer.
 
 ## Computer Vision Library
 
-<a href="alternative text"><img src="https://github.com/simpleflowgui/simpleflowgui.github.io/blob/main/imgs/computervisionlib.png?raw=true" align="middle" width="200" height="100"></a>
+<a href="alternative text"><img src="https://github.com/simpleflowgui/simpleflowgui.github.io/blob/main/imgs/computervisionlib.png?raw=true" align="middle" width="400" height="100"></a>
 
 ### Input Model Node: 
 
@@ -236,7 +236,7 @@ Image path: To specify the path for the image file to be predicted on by selecti
 
 ## Communication Library
 
-<a href="alternative text"><img src="https://github.com/simpleflowgui/simpleflowgui.github.io/blob/main/imgs/communicationlib.png?raw=true" align="middle" width="200" height="100"></a>
+<a href="alternative text"><img src="https://github.com/simpleflowgui/simpleflowgui.github.io/blob/main/imgs/communicationlib.png?raw=true" align="middle" width="400" height="100"></a>
 
 ### MQTT Publish Node:
 
@@ -292,7 +292,7 @@ Topic: To specify the topic to subscribe to.
 
 ## Dataset Library
 
-<a href="alternative text"><img src="https://github.com/simpleflowgui/simpleflowgui.github.io/blob/main/imgs/datasetlib.png?raw=true" align="middle" width="200" height="100"></a>
+<a href="alternative text"><img src="https://github.com/simpleflowgui/simpleflowgui.github.io/blob/main/imgs/datasetlib.png?raw=true" align="middle" width="400" height="100"></a>
 
 ### ClassificationPrepareYOLO Node:
 
