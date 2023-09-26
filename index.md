@@ -1,88 +1,165 @@
-# SimpleFlow
-A simple to use node-based GUI for creating multipurpose flows, such as those for training models to perform computer vision tasks.
+# Nodes Guide
+## Basic Library
+### Start Node: Used to mark the start of a flow. It should be noted that only one start node should be in a certain flow.
 
-<a href="alternative text"><img src="https://github.com/simpleflowgui/SimpleFlow/blob/main/simpleflow.png" align="middle" width="800" height="400"></a>
+### End Node: 
+Description:
+Used to mark the end of a flow. It should be noted that only one start node should be in a certain flow.
 
-# Installation
-## 1. Install Node.js and npm
+### Output Image Node: 
+Description:
+Used to display an image when the previous node that its connected to has an output data in a form of an image.
 
-(Linux)
-```code
-sudo apt update
-sudo apt install Node.js
-sudo apt install npm
-```
+### Loop Node: Used to re-execute the part of the flow (nodes) that lies after it indefinetly. To stop the loop, the stop button on the main GUI should be clicked on.
 
-(Windows)
+### Camera Video Input Node: 
+Description:
+Used for real time camera input in the form of a stream/video. When present in a flow, the input of model for prediction would be the frames from a camera video stream.
+Parameters:
+Camera index: To specify the index of a connected camera to the computer.
 
-Download and install https://nodejs.org/en/download
+### Select Camera Node:
+Description:
+Used for selecting a camera used to take a photo by to be used as an input for nodes such as those for prediction.
+Parameters:
+Camera index: To specify the index of a connected camera to the computer.
 
-## 2. Install Python and pip
 
-(Linux)
-```code
-sudo apt update
-sudo apt-get install python3
-sudo apt-get install python3-pip python-dev
-```
 
-(Windows)
 
-Download and install https://www.python.org/downloads/windows/
+## Computer Vision Library
+### Input Model Node: 
+Description:
+Used to select a model file to be used for prediction.
+Parameters:
+Model path: To specify the path for the model file by selecting it in the file explorer window.
 
-## 3. Install Git
-(Linux)
-```code
-sudo apt-get install git
-```
+### Torch Classify Node:
+Description:
+Used for prediction using Torch classification models. Classifies images into the classes that the model is trained on.
+Parameters:
+Image path: To specify the path for the image file to be predicted on by selecting it in the file explorer window. Dont select anything to use a photo taken by a camera.
+Device: To specify either to use the cpu or cuda for predictions. Select cuda for Nvidia gpu processing if you have a gpu for faster results; otherwise, select cpu.
 
-(Windows)
+### Select Model Node:
+Description:
+Used to select a pretrained Torch model for training or predicting.
+Parameters:
+Task: To select the desired computer vision task.
+Model: To select the pretrained model for the selected computer vision task.
+Builder: To select a specific builder for the pretrained model selected.
 
-Download and install https://git-scm.com/download/win
+### Train Torch Classify Node:
+Description:
+Used to train models for classification task by using transfer learning using pretrained torch models.
+Parameters:
+Dataset Path: To specify the path for the dataset folder by selecting it in the file explorer window. Dont select anything if you have a ClassificationPrepareTorch node in the flow.
+Epochs number: To select the number of epochs to train the model for.
+Device: To specify either to use the cpu or cuda for training. Select cuda for Nvidia gpu processing if you have a gpu for faster results; otherwise, select cpu.
 
-## 4. Clone SimpleFlow github repository
+### Torch Detect Node:
+Description:
+Used for prediction using Torch object detection models. Detects objects in images.
+Parameters:
+Image path: To specify the path for the image file to be predicted on by selecting it in the file explorer window. Dont select anything to use a photo taken by a camera.
+Device: To specify either to use the cpu or cuda for predictions. Select cuda for Nvidia gpu processing if you have a gpu for faster results; otherwise, select cpu.
 
-In cmd on Windows or Terminal on Linux:
+### Train Torch Detect Node:
+Description:
+Used to train models for object detection task by using transfer learning using pretrained torch models.
+Parameters:
+Dataset Path: To specify the path for the dataset folder by selecting it in the file explorer window.
+Epochs number: To select the number of epochs to train the model for.
+Device: To specify either to use the cpu or cuda for training. Select cuda for Nvidia gpu processing if you have a gpu for faster results; otherwise, select cpu.
 
-```code
-git clone https://github.com/simpleflowgui/SimpleFlow
-```
+### Train YOLO Node:
+Description:
+Used to train models for classification, detection, and segmentation tasks by using transfer learning using pretrained YOLOV8 models.
+Parameters:
+Mode: To select the desired computer vision task.
+Model: To select the pretrained model after selecting a task.
+Dataset path: To specify the path for the dataset folder/file by selecting it in the file explorer window. Dont select anything if you have a YOLO node from the Dataset Library in the flow.
+Epochs: To select the number of epochs to train the model for.
+Image size: To select the size of input images during training.
+Batch size: To select the number of images per batch during training.
+Device: To specify either to use the cpu or cuda for training. Select cuda for Nvidia gpu processing if you have a gpu for faster results; otherwise, select cpu.
 
-## 5. Create a new React project using Vite
-```code
-cd SimpleFlow
-npm create vite@latest my-react-flow-app -- --template react
-npm install reactflow --force
-cd my-react-flow-app
-npm install
-```
+### Predict YOLO Node:
+Description: 
+Used to perform predictions using pretrained or costum trained YOLOV8 based models for classification, detection, or segmentation.
+Parameters:
+Model: To select whether to use a pretrained or custom model.
+Mode: To select the desired computer vision task.
+Select Model: To select the pretrained model in case of predictions using a pretrained model.  
+Image path: To specify the path for the image file to be predicted on by selecting it in the file explorer window. Dont select anything to use a photo taken by a camera.
 
-## 6. Run the setup file
+### Segment Anything Node:
+Description:
+Used to segment an image by using the Segment Anything Model (SAM).
+Parameters:
+Image path: To specify the path for the image file to be predicted on by selecting it in the file explorer window. Dont select anything to use a photo taken by a camera.
 
-(Linux)
-```code
-cd ..
-sudo chmod +x setup.sh
-./setup.sh
-```
 
-(Windows)
-```code
-cd ..
-setup.cmd
-install.cmd
-```
 
-## 7. Run SimpleFlow
-(Linux)
-```code
-simpleflow
-```
 
-(Windows)
-```code
-simpleflow.cmd
-```
+## Communication Library
+### MQTT Publish Node:
+Description: 
+Used to publish (send) messages on a topic to an MQTT broker.
+Parameters:
+Client ID: To specify a client ID. A random ID will be assigned if left empty.
+Username: To set a username for broker authentication (optional). Leave empty if not desired.
+Password: To set a password for broker authentication (optional). Leave empty if not desired.
+Broker: To specify the hostname or IP address of the broker.
+Port: To specify the network port of the server host to connect to.
+Message: To specify the message to be sent. Input the name of a variable to send as a message or a string.
+Topic: To specify the topic to publish on.
+
+### MQTT  Subscribe Node:
+Description:
+Used to subscribe to a topic to recieve messages published to those topics.
+Parameters:
+Client ID: To specify a client ID. A random ID will be assigned if left empty.
+Username: To set a username for broker authentication (optional). Leave empty if not desired.
+Password: To set a password for broker authentication (optional). Leave empty if not desired.
+Broker: To specify the hostname or IP address of the broker.
+Port: To specify the network port of the server host to connect to.
+Topic: To specify the topic to subscribe to.
+
+
+
+
+## Dataset Library
+### ClassificationPrepareYOLO Node:
+Description:
+Used to prepare datasets to use for training classification models by using pretrained YOLOV8 classification models. The node will structure the dataset folder to be used with the Train YOLO Node.
+Parameters:
+Dataset path: To specify the path for the dataset folder by selecting it in the file explorer window.
+Dataset name: To specify the name of the folder to save the dataset as.
+Dataset folder structure: To select whether the images that make up the dataset are organized as a pool of labeled images or in class folders.
+Train images percentage: To specify the percentage of the training images from the total images of the dataset.
+Test images percentage: To specify the percentage of the test images from the total images of the dataset.
+
+### ClassificationPrepareTorch Node:
+Description:
+Used to prepare datasets to use for training classification models by using pretrained Torch classification models. The node will structure the dataset folder to be used with the Train Torch Classify Node.
+Parameters:
+Dataset path: To specify the path for the dataset folder by selecting it in the file explorer window.
+Dataset name: To specify the name of the folder to save the dataset as.
+Dataset folder structure: To select whether the images that make up the dataset are organized as a pool of labeled images or in class folders.
+Train images percentage: To specify the percentage of the training images from the total images of the dataset.
+Test images percentage: To specify the percentage of the test images from the total images of the dataset.
+
+### YOLO From Label Studio Node:
+Description:
+Used to prepare datasets to use for training object detection models by using pretrained YOLOV8 object detection models. The node will create a config.yaml file to use as the dataset input.
+Parameters:
+Dataset folder: To specify the path for the dataset folder by selecting it in the file explorer window.
+Train images percentage: To specify the percentage of the training images from the total images of the dataset.
+Test images percentage: To specify the percentage of the test images from the total images of the dataset.
+
+
+ 
 
 
 
