@@ -106,6 +106,11 @@ Important Notes:
 
   Test_node (will be shown as Test node)
 
+* To print on the log box, use the 'writelog()' function as follows:
+  ```
+    writelog("hello world")
+  ```
+
 
 
 
