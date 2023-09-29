@@ -68,3 +68,46 @@ To add another node to the already created new library, follow the same steps bu
 
 Note: For all imports, classes, and global functions, paste the code in the text area under "Paste Imports" label
 
+Important Notes:
+* To access the any variable value in the python code of a node, access it by the key in the dictionary that is named as the name of the variable (label on the node above the input element). For example if a node has a text input field with the name (label above) 'Insert Name', this can be accessed in the python code as inps["vars"]["Insert Name"].
+
+* To share (transfer) data to following node when the flow is executed, you should pass the data in an object which is returned at the end of the function and can be later accessed by the       "prev_node" key in the inps dictionary as follows inps["prev_node"]["TransferedVariable"]. For example, the following example code for a test node:
+
+  ```
+     def  test_node(inps):
+     total = 4 + 5
+     return {"total":total}
+  ```  
+   
+  Here, the value for the variable total is passed in the returned object and can be accessed in other nodes code as inps["prev_node"]["total"].
+
+* To show an image as an output of a node in the UI using the Output Image Node, encode the data of the image in base64 after decoding using utf-8 codec as follows:
+
+  ```
+     byte_im = base64.b64encode(byte_im).decode('utf-8')
+     byte_im = f"data:image/png;base64,{byte_im}"
+  ```
+
+  The data is then passed in the returned object at the end of the function by using 'data' as the key as follows:
+
+  ```
+  return{'data':byte_im}
+  ```
+
+* In the returned object of the node function, "outimagenode":inps["output_node"] should be added when an image is to be shown on the output Image Node.
+
+* All node functions to have 'inps' as a parameter to be able to access variable values defined by the user on the UI as follows:
+
+  ```
+  def example_node(inps):
+  ```
+
+* To have a space in the name of a library or a node, add an underscore instead of a blank space as follows:
+
+  Test_node (will be shown as Test node)
+
+
+
+
+  
+
